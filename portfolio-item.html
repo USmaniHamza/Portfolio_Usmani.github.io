@@ -2,60 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevJane Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
     <!-- Update these with your own fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+        rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/jquery.wm-zoom-1.0.min.css" /> -->
 </head>
 
 <body>
-    <header>
+    <header style="background-color: #fff9E3;">
 
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#services" class="nav__link">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#work" class="nav__link">My Work</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <!-- Mid Section-->
 
-    <section class="intro">
-        <h1 class="section__title section__title--intro">
-            The title <strong>of my project</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-        <img src="img/portfolio-01.jpg" alt="" class="intro__img">
-    </section>
+    <div class="newspaper">
 
-    <div class="portfolio-item-individual">
-        <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas
-            sapiente voluptate, magnam ipsum eius earum?</p>
-        <img src="img/portfolio-details.jpg" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti
-            fugiat ducimus consequatur incidunt?</p>
-        <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas
-            sapiente voluptate, magnam ipsum eius earum?</p>
+        <h2>BRACU Classroom</h2>
+        <div class="ProjectDescription">
+            <p>
+                An online class management system similar to that of <strong>Google Classroom</strong> but it has a
+                platform of it's own with it's own student performance tracking system purely based on <strong>
+                    Data Visualization</strong> for both students and faculty members for better communication . The
+                tools that aided this project are <strong>JAVA SE-8</strong> , basic <strong>Java-Swing</strong> and
+                <strong>JFreeCharts</strong> library .
+            </p>
+        </div>
+
+        <div class="article">
+
+
+            <img src="img/PostGrades.PNG" class="first" />
+            <p>
+                This image is based on the UI of the teachers home page after logging in, the table platform as we see
+                is to mark out students from all section under the responsibility of the teachers, the students that
+                need <strong>attention</strong> is going to be auto-marked out based on the weak performances
+                as soon as they receive
+                their scores . An option of reviewing overall student performances based on the first
+                <strong>50</strong>
+                overall marks
+                before the mid-term exams so that students can get a heads up before the finals in order to improve
+                their performances .
+            </p>
+            <p>
+                The fields at the bottom of the page is to filter out the students in order to submit their scores which
+                is handled by a database at the back-end .
+            </p>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+
+
+        <div class="article">
+            <img src="img/SpiderWebChartStudent.PNG" class="first" />
+            <p>
+                This image indicates where the particular students were lacking in performance compared to what the
+                students were supposed to achieve in order to receive good scores .
+            </p>
+
+            <p>
+                The <strong>Blue Shade</strong> indicates what was expected as output performances from the students and
+                the <strong>Red Shade</strong> indicates what the students in particular actually achieved as scores .
+
+            </p>
+
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="article">
+            <img src="img/RadarChart.PNG" class="first" />
+            <p>
+                This image is about <strong>Data Visualization</strong> of the scores students achieved within the first
+                fifty marks
+                using <strong>Spider Charts</strong> or <strong>Radar Charts</strong> .
+            </p>
+
+            <p>
+                The edges close to the arc of the circle will determine how well the student is performing
+                throughout
+                the mid-terms. A small message-box telling the user what each degrees mean for example the edge at
+                <strong>45</strong>
+                degrees mean what the student achieved in the best Quiz marks taken out of the total Quizzes given
+                whereas the edge at <strong>180</strong> degrees show what the student achieved in the assignments etc .
+            </p>
+            <p>
+                If the students fall under a certain <strong>zone</strong> or if the delta symbol at the heart of the
+                Spider Chart, shrinks down to
+                certain level then the prediction of identifying weak
+                students would work in order to mark the students as a reminder to improve their performances .
+            </p>
+        </div>
+
+
+        <div class="article">
+            <img src="img/MarksBeforeMidsTeacher.PNG" class="first" />
+            <p>
+                This overlaid bar chart helps to <strong>visualize</strong> the overall performances of all the students
+                (section-wise) under the faculty's responsibility. The <strong>red bar</strong> represents the total
+                marks of <strong>50</strong> whereas
+                the <strong>blue bar</strong> represents the overall <strong>Mean</strong> of the scores achieved by the
+                students in the
+                particular section .
+            </p>
+
+        </div>
+
+        <div class="article">
+            <img src="img/MarksAfterMidsTeacher.PNG" class="first" />
+            <p>
+                This image shows us the data of the overall scores the students were successful in achieving before
+                finals since the marks that is in comparison is out total <strong>100</strong> . The Red bar being the
+                total scores and
+                the Blue bar being the scores actually achieved
+            </p>
+
+
+        </div>
+        <div class="ProjectConclusion">
+            <p>
+                Together with the help of <strong>Data Visualization</strong> techniques for both the students and the
+                teachers, a better
+                means of communication can be achieved which will help both the student and their teachers to follow-up
+                throughout the semester .
+            </p>
+        </div>
     </div>
-
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- replace with your own email address -->
-        <a href="mailto:hamzahusmani00@gmail.com" class="footer__link">hamzahusmani00@gmail.com</a>
+        <div class="footermessage">
+            <h3><strong>Let's talk</strong><br></h3>
+            <p>
+                Wanna get in touch or talk about a project? <br>
+                Feel free to contact me via email at <a href="mailto:hamzahusmani00@gmail.com" class="footer__link">
+                    hamzahusmani00@gmail.com</a></p>
+        </div>
+
         <ul class="social-list">
             <li class="social-list__item">
                 <a class="social-list__link" href="https://www.facebook.com/hamzah.usmani/">
@@ -80,9 +194,7 @@
         </ul>
     </footer>
 
-
-    <script src="js/index.js"></script>
-
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
